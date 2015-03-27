@@ -6,6 +6,9 @@
 
 var React = require('react-native');
 
+var API_KEY = '7waqfqbprs7pajbz28mqf6vz';
+var API_URL = 'http://api.rottentomatoes.com/api/public/v1.0/lists/movies/in_theaters.json';
+
 var MOCKED_MOVIES_DATA = [
   {
     title: 'Title',
