@@ -31,8 +31,8 @@ var NativeReact = React.createClass({
       <View style={styles.container}>
         <Image source={{uri: movie.posters.thumbnail}} style={styles.thumbnail} />
         <View style={styles.rightContainer}>
-          <Text>{movie.title}</Text>
-          <Text>{movie.year}</Text>
+          <Text style={styles.title}>{movie.title}</Text>
+          <Text style={styles.year}>{movie.year}</Text>
         </View>
       </View>
     );
@@ -46,6 +46,17 @@ var styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#F5FCFF',
+  },
+  rightContainer: {
+    flex: 1
+  },
+  title: {
+    fontSize: 20,
+    marginBottom: 8,
+    textAlign: 'center',
+  },
+  year: {
+    textAlign: 'center'
   },
   thumbnail: {
     width: 53,
