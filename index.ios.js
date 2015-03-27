@@ -28,7 +28,7 @@ var NativeReact = React.createClass({
       dataSource: new ListView.DataSource({
         rowHasChanged: (row1, row2) => row1 !== row2,
       }),
-      loaded: false
+      loaded: false,
     };
   },
   componentDidMount: function () {
@@ -46,7 +46,7 @@ var NativeReact = React.createClass({
       .done();
   },
   render: function() {
-    if (!this.state.movies) {
+    if (!this.state.loaded) {
       return this.renderLoadingView();
     }
 
