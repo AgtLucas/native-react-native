@@ -5,25 +5,33 @@
 'use strict';
 
 var React = require('react-native');
+
+var MOCKED_MOVIES_DATA = {
+  {
+    title: 'Title',
+    year: '2015',
+    posters: {
+      thumbnail: 'http://i.imgur.com/UePbdph.jpg'
+    }
+  },
+};
+
 var {
   AppRegistry,
+  Image,
   StyleSheet,
   Text,
   View,
 } = React;
 
 var NativeReact = React.createClass({
+  var movie = MOCKED_MOVIES_DATA[0];
   render: function() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!!!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.ios.js{'\n'}
-          Press Cmd+R to reload
-          AWESOME
-        </Text>
+      <View styles={styles.container}>
+        <Text>{movie.title}</Text>
+        <Text>{movie.year}</Text>
+        <Image source={{uri: movie.posters.thumbnail}} />
       </View>
     );
   }
