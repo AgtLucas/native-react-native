@@ -86,14 +86,14 @@ var styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    backgroundColor: '#F3F3F3',
   },
   rightContainer: {
     flex: 1
   },
   listView: {
     paddingTop: 20,
-    backgroundColor: '#F5FCFF',
+    backgroundColor: '#F3F3F3',
   },
   title: {
     fontSize: 20,
