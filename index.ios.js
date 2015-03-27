@@ -6,7 +6,7 @@
 
 var React = require('react-native');
 
-var MOCKED_MOVIES_DATA = {
+var MOCKED_MOVIES_DATA = [
   {
     title: 'Title',
     year: '2015',
@@ -14,7 +14,7 @@ var MOCKED_MOVIES_DATA = {
       thumbnail: 'http://i.imgur.com/UePbdph.jpg'
     }
   },
-};
+];
 
 var {
   AppRegistry,
